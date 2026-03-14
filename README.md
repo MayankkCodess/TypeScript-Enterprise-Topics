@@ -44,3 +44,22 @@ and if any problem occurs then i can see that in AST Explorer and Parser Diagnos
 
 4. Checker - now checker ka work aapke code ki strict checking krna hai , isiliye ye aapke code se 2 times go through krta hai 
 > for eg : Many IDEs pick this checker from github and show underlines of errors 
+
+5. Emitter - only generate or remove all things in ts make it same like js 
+
+---------------------topics 3-----------------------
+
+1. initialize a npm init -y
+
+2. install typescript project wise not globally 
+npm i -D typescript 
+
+3. node package executer -> npx tsc --init
+
+> now it will create tsconfig.json
+1. "rootDir" : "./src" -> it means it expects all files in src folder 
+2. "outDir" : "./dist" -> it will expect a dist folder (distribution folder) where it will put all js files it made using emitter 
+
+> npx tsc - helps in creating .map .d.ts files in dist folder 
+
+> write this script in package.json -> "npx ts-node src/index.js"

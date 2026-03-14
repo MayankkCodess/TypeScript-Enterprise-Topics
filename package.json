@@ -1,0 +1,25 @@
+{
+  "name": "typescript-essentials",
+  "version": "1.0.0",
+  "description": "---------------Topics 1---------------------\r >Why to Learn TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "dev":"npx tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MayankkCodess/TypeScript-Enterprise-Topics.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/MayankkCodess/TypeScript-Enterprise-Topics/issues"
+  },
+  "homepage": "https://github.com/MayankkCodess/TypeScript-Enterprise-Topics#readme",
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}
