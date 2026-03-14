@@ -24,3 +24,23 @@
 
 
 > Notice: another file must also not have same function name 
+
+---------------Topic 2----------------------
+> At the end TS ko JS main hi Convert hona hai-----
+
+![TypeScript flow](image.png)
+
+> Flow :- TypeScript Code -> lexer -> Parser -> Binder -> Checker -> Emmiter/Generator -> .js,.d.ts,.map
+
+1. Lexer work is doing tokenization , checking simple pbs like semicolon , paranthesis ,etc
+
+2. Parser - see full code on Github Repo of TS
+it makes AST -> which is a abstract Syntax tree 
+and if any problem occurs then i can see that in AST Explorer and Parser Diagnostics tool 
+
+3. Binder -> what it do is - make a. symbol tables b. make parent pointer c. flow nodes 
+
+> now checker work is to gothrough two times with our code 
+
+4. Checker - now checker ka work aapke code ki strict checking krna hai , isiliye ye aapke code se 2 times go through krta hai 
+> for eg : Many IDEs pick this checker from github and show underlines of errors 
