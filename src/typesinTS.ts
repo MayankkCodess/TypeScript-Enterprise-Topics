@@ -1,9 +1,9 @@
 //------------Type Inferencing---------------
-// so here ts infer automatically that it is string
+// so here ts infer  data type of variable automatically that it is string
 let drink = "chai";//hover to see clearly
 
 let cups = Math.random() > 0.5 ? 10 : '5'
-//above ts automatically infer that it might be number and string as well
+//above ts automatically infer the variable that it might be number and string as well
 
 // now you will see mainly two types of errors in ts
 //1. type error and 2. Syntax Error 
