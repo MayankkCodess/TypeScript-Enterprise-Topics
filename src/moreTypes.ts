@@ -43,7 +43,22 @@ try {
 } catch (error) {// abb ynha pr ts khta hai main nahin janta error kis type ka aayega
     //toh humm iske liye kya karte hain ki 
     if(error instanceof Error){
-        console.log(error.message); 
+        console.log(error.message); // means agar ye error class ka instance hai tabhi ye kro , ye type guard ka concept hai 
     }
     console.log("Error: " , error); 
+}
+
+type Role = "admin" | "user" 
+
+// void ynha kafi interesting hota hai means mujhe farak nahi padta aap kya return kr rahe hain
+function redirectBasedOnRole(role:Role):void{
+   if(role === 'admin'){
+    console.log("Redirecting to admin Dashboard"); 
+    return; 
+   }
+   if(role === 'user'){
+    console.log("Redirecting to user Dashboard"); 
+    return; 
+   }
+   role; // iska type never hoga , means kyunki aapne sare case handle krliye hain toh iss value ko access hi nahi  milna chahiye ynha
 }
